@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Nova+Square&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body{
+    
+  color: white;
+background-color: rgb(163, 105, 105);
+font-family: 'Nova Square';
+}
+.choice-container {
+border: 2px solid black;
+    display: flex;
+    margin-bottom:0.8rem ;
+    width: 100%;
+border-radius: 4px;
+background: rgb(183, 121, 121);
+font-size: 1rem;
+
+min-width: 80rem;
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 183, 247, 0.5);
+transform: scale(1.02);
+transition: transform 100ms;
+}
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: white;
+}
+.choice-text{
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct{
+    background: linear-gradient(32deg, rgba(11,223,36)0%,rgba(41,232,111)100%);
+}
+.incorrect{
+    background: linear-gradient(32deg,rgba(230,29,29,1)0%,rgba(224,11,11,1)100%);
+}
+
+/* heading up display */
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hug-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    width: 28rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 233, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow:hidden;
+}
+#progressBarFull{
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+    }
+    
+}
+.btn{
+    font-size: 2rem ;
+    padding: 2rem 3rem;
+
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    color:rgb(28,26,26);
+    background: linear-gradient(90deg, rgb(187, 161, 161)50%,rgb(144, 121, 121)130%);
+    border-radius: 4px;
+}
+.btn-container{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+align-items: center;
+gap: 3px;
+}
